@@ -1,0 +1,10 @@
+.parallax
+{
+    background-image: url('https://blog.hotmart.com/blog/2016/09/BLOG_ganhardinheirocomblog-1-670x419.png');
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
