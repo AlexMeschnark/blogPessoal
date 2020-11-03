@@ -1,17 +1,18 @@
 <div class="container-fluid d-flex justify-content-center">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <a class="navbar-brand" href="#">Blog Pessoal</a>
+        <a class="navbar-brand" routerLink='/home'>Blog Pessoal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="conteudoNavBarSuportado">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link text-monospace text-uppercase font-weight-bold p-3 espacamento" href="#">Home <span class="sr-only">(Página atual)</span></a>
+              <a class="nav-link text-monospace text-uppercase font-weight-bold p-3 espacamento"
+              routerLink='/home'>Home <span class="sr-only">(Página atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-monospace text-uppercase font-weight-bold p-3 espacamento" href="#">Feed</a>
+              <a class="nav-link text-monospace text-uppercase font-weight-bold p-3 espacamento" routerLink="/feed">Feed</a>
             </li>
           </ul>
         </div>
