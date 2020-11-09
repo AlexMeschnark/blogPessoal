@@ -14,7 +14,8 @@ export class CadastroComponent implements OnInit {
   senha : string 
 
   constructor( private authService : AuthService,
-               private router      : Router) { }
+               private router      : Router
+               ) { }
 
   ngOnInit() {
   }
@@ -28,7 +29,7 @@ export class CadastroComponent implements OnInit {
   {
     
 
-      if(this.senha===this.user.senha)
+      if(this.senha === this.user.senha)
     {
       this.authService.cadastrar(this.user).subscribe((resp : User) => {
         this.user = resp
@@ -36,6 +37,9 @@ export class CadastroComponent implements OnInit {
         alert("Usuário cadastrado com sucesso!")
       })
       
+    }else
+    {
+      alert("Suas senhas não conferem.")
     }
     
   }
