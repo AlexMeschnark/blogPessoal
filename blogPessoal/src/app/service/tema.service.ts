@@ -16,16 +16,26 @@ export class TemaService {
 
   getAllTemas()
   {
-    return this.http.get('htttp://localhost:8080/temas', this.token)
+    return this.http.get('htttp://localhost:8080/tema', this.token)
   }
 
   getByIdTema(id:number)
   {
-    return this.http.get('htttp://localhost:8080/temas/${id}', this.token)
+    return this.http.get('htttp://localhost:8080/tema/${id}', this.token)
   }
 
   postTema(tema : Tema)
   {
-    return this.http.post('htttp://localhost:8080/temas', tema, this.token)
+    return this.http.post('htttp://localhost:8080/tema', tema, this.token)
+  }
+
+  putTema(tema : Tema)
+  {
+    return this.http.put('htttp://localhost:8080/tema', tema, this.token)
+  }
+
+  deleteTema(id:number)
+  {
+    return this.http.delete('htttp://localhost:8080/tema/${id}', this.token)
   }
 }
